@@ -2,11 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const dotenv = require("dotenv");
 const ejs = require("ejs");
-const fs = require("fs");
 
-dotenv.config();
 
 // Access your API key as an environment variable
 const genAI = new GoogleGenerativeAI(process.env.API_KEY);
